@@ -1,0 +1,48 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+.brand, .links{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand, .links,h2, img, a{
+    background-color: #FFFFFF;
+}
+
+.brand img {
+    width: 60px;
+    margin-right: 0.6em;
+}
+
+.brand h2{
+    transition: .4s;
+}
+
+.brand:hover > h2{
+    color: #6bb39b;
+}
+
+.links li{
+    margin-right: 1em;
+    list-style: none;
+}
+
+
+.links a{
+    padding: .1em .3em;
+}
+
+#add a{
+    color: #6bb39b;
+}
+
+#add a:hover{
+    color: #85e6c0;
+}

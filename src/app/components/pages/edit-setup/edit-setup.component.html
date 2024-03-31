@@ -1,0 +1,4 @@
+<div *ngIf="setup">
+    <h2>Editando o setup <span>{{setup.title}}</span>!</h2>
+<app-setup-form (onSubmit)="editHandler($event)" [setupData]="setup" [btnText]="btnText"></app-setup-form>
+</div>

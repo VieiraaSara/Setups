@@ -1,0 +1,24 @@
+<div class="home-container">
+    <h1>Veja o que estão compartilhando</h1>
+    <div class="search-container">
+        <form>
+            <fa-icon [icon] = "faSearch"></fa-icon>
+            <input type="text" placeholder="Ou busque por um Setup..." (input)="search($event)">
+
+        </form>
+    </div>
+    <div *ngIf="setups.length > 0;else noSetups">
+        <div class="setups-container">
+        <div class="setup" *ngFor="let setup of setups">
+            <img src="{{baseApiUrl}}uploads/{{setup.image}}" alt="{{setup.title}}">
+            <h2>{{setup.title}}</h2>
+            <p class="date">Em: {{setup.created_at}}</p>
+            <p>Comentários: {{setup.comments!.length}}</p>
+            <p><a routerLink="setups/{{setup.id}}">Detalhes</a></p>
+        </div>
+    </div>
+    </div>
+    <ng-template #noSetups>
+        <h1>Não há setups cadastrados!</h1>
+    </ng-template>
+</div>

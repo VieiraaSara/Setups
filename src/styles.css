@@ -1,1 +1,123 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    color: #000000;
+    background-color: #FAFAFA;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    
+    transition: .4s;
+}
+
+a:hover{
+    color: #6bb39b;
+}
+
+/* FORMULÁRIO GLOBAL */
+
+form{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: .9em;
+    margin-bottom: .5em;
+}
+
+.form-group input,
+.form-group textarea{
+    padding: .6em;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 0.8em;
+}
+
+input[type="submit"]{
+    background-color: #6bb39b;
+    border-radius: 30px;
+    color: #FAFAFA;
+    border: 2px solid transparent;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: .4s; 
+}
+
+input[type="submit"]:hover{
+    color: #6bb39b;
+    border-color: #6bb39b;
+    background-color: transparent;
+}
+
+.validation-error p{
+    color: rgb(255, 0, 0);
+    margin-top: .5em;
+    font-size: 15px;
+    border-left: 3px solid rgb(255, 0, 0);
+    padding-left: .2em;
+}
+
+/* BOTÕES GLOBAIS */
+
+    .edit-btn,
+    .remove-btn{
+        border: 1px solid #EFEFEF;
+        padding: .4em 1em;
+        font-size: 1em;
+        margin: 0 .5em;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: #fafafa;
+        transition: 0.4s;
+    }
+
+    button fa-icon,
+    a fa-icon{
+        margin-right: 0.2em;
+
+    }
+
+
+    .edit-btn,
+    .edit-btn path{
+        border-color: rgb(0, 0, 255);
+        color: rgb(0, 0, 255);
+        
+    }
+
+    .edit-btn:hover,
+    .edit-btn:hover {
+        background-color: rgb(0, 0, 255);
+        color: #fafafa;
+       
+    }
+
+    .remove-btn,
+    .remove-btn path{
+        border-color: rgb(255, 0, 0);
+        color: rgb(255, 0, 0);
+    }
+
+    .remove-btn:hover,
+    .remove-btn:hover {
+        background-color: rgb(255, 0, 0);
+        color: #fafafa;
+    }

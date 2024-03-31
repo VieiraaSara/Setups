@@ -5,87 +5,87 @@
     flex-direction: column;
 }
 
-/* Estilo do título principal */
+
 .home-container h1 {
     margin-bottom: 0.5em;
 }
 
-/* Define o container dos setups */
+
 .setups-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px; /* Ajuste o valor conforme necessário */
+    max-width: 1200px; 
     margin: 0 auto;
     justify-content: space-between;
 }
 
-/* Define o estilo para cada setup */
+
 .setup {
-    width: 30%; /* Ajuste o valor conforme necessário */
+    width: 30%;
     margin-bottom: 1em;
     text-align: center;
 }
 
-/* Estilo para o título do setup */
+
 .setup h2 {
     color: #292929;
     text-transform: uppercase;
 }
 
-/* Estilo para as imagens dos setups */
+
 .setup img {
     width: 100%;
-    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    max-width: 100%; 
     margin-bottom: 1em;
     border-radius: 3px;
 }
 
-/* Estilo para os detalhes do setup */
+
 .setup h3,
 .setup p {
     margin-bottom: 1em;
 }
 
-/* Estilo para a data */
+
 .setup .date {
     font-size: 0.7em;
     font-style: italic;
 }
 
-/* Estilo para os links */
+
 a {
     border-radius: 30px;
     color: #000000;
     background-color: rgba(95, 156, 159, 0.498);
     padding: .6em .9em;
-    transition: color 0.4s; /* Adiciona transição para a mudança de cor */
+    transition: color 0.4s; 
 }
 
-/* Estilo de hover para os links */
+
 a:hover {
     color: #495455;
 }
 
-/* Define o container da barra de pesquisa */
+
 .search-container {
     margin-bottom: 2em;
     width: 100%;
 }
 
-/* Define o estilo do formulário de pesquisa */
+
 .search-container form {
     width: 30%;
     position: relative;
 }
 
-/* Define o ícone de pesquisa */
+
 .search-container fa-icon {
     position: absolute;
     top: 8px;
     left: 8px;
 }
 
-/* Define o estilo do campo de entrada da pesquisa */
+
 .search-container input {
     padding: 0.5em;
     width: 100%;
